@@ -3,7 +3,7 @@ name: Run Olist Data Ingestion
 on:
   workflow_dispatch: # Vẫn giữ dòng này để bạn có thể bấm chạy test bằng tay khi cần
   schedule:
-    - cron: '0 0 * * *' # Lệnh chạy tự động vào 0h00 sáng mỗi ngày (theo giờ UTC)
+    - cron: '0 17 * * *' # Lệnh chạy tự động vào 0h00 sáng mỗi ngày (theo giờ UTC)
 jobs:
   run-ingestion-job:
     runs-on: ubuntu-latest
